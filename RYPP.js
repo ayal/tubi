@@ -157,13 +157,13 @@ var RYPP = (function($, undefined) {
         // height: '390',
         // width: '640',
         playerVars: {
-          // controls: 0,
-          // showinfo: 0 ,
+           controls: 1,
+           showinfo: 1 ,
           // autoplay: 0,
           // html5: 1,
           enablejsapi: 1,
           rel: 0,
-          modestbranding: 1,
+          modestbranding: 0,
           wmode: 'transparent'
         },
         events: {
@@ -297,7 +297,6 @@ var RYPP = (function($, undefined) {
                   tit = item.snippet.title,
                   aut = item.snippet.channelTitle,
                   thu = item.snippet.thumbnails.default.url;
-		  console.log(vid,tit,aut,thu);
                 that.addVideo2Playlist(vid, tit, aut, thu);
               }
               if ( $.isEmptyObject( that.data.temp_vl ) ) {
