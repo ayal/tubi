@@ -1,5 +1,5 @@
 $(function(){
-    var json = JSON.parse(location.hash.slice(1));
+    var json = JSON.parse(decodeURIComponent(location.hash.slice(1)));
     console.log(json);
     $('.RYPP').attr('data-ids', json.playlist.join(','));
 
